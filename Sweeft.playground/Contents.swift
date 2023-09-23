@@ -86,7 +86,7 @@ isProperly(sequence: "(()())(")
 
 func countWays(n: Int, steps: [Int]) -> Int {
     var dp = [Int](repeating: 0, count: n + 1)
-    dp[0] = 1  // one way to start at the entrance of the bridge
+    dp[0] = 1
     
     for i in 1...n {
         if steps[i - 1] == 1 {
